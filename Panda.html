@@ -9,48 +9,55 @@
 </head>
 <body >
     <!-- Navbar starts -->
-   <header class="container mt-5">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary">
+   <header class="mb-5 pb-5">
+    <nav class="container fixed-top  navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
          
-          <a class="navbar-brand" href="#">
-            <img src='images/logo.png' alt="Logo"  class="d-inline-block align-text-top">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="#shoes">Shoes</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="#backpacks">Backpack</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link " href="#subscribe">Subscribe</a>
-              </li>
-              
-            </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="navbar-brand" href="#">
+                    <img src='images/logo.png' alt="Logo"  class="d-inline-block align-text-top">
+                  </a>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link " href="#shoes">Shoes</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link " href="#backpack">Backpack</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link " href="#subscribe">Subscribe</a>
+                      </li>
+            </div>
           </div>
         </div>
-      </nav>
-   
-    <!-- Navbar end -->
-    
   
-    <section id="home" >
+   
+      
+    </header>
+    <!-- Navbar end -->  
+
+
+    <!-- slider starts here -->
+    
+    <section class="container" id="home" >
         <!-- Slider section start -->
-        <div id="carouselExample" class="carousel slide mt-5 bg-info p-5 rounded">
+        <div id="carouselExample" class="carousel slide mt-5 bg-danger-subtle p-5 rounded">
             <div class="carousel-inner">
                 <!-- single item -->
               <div class="carousel-item active">
                 <div class="row">
-                    <div class="col-lg-7 d-flex flex-column justify-content-center text-white">
-                        <h1>Lorem ipsum dolor sit amet.</h1>
+                    <div class="col-lg-7 d-flex flex-column justify-content-center  ">
+                        <h1>High Quality headphone</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci inventore dolorem! Delectus velit dicta earum harum soluta exercitationem aliquid, mollitia cupiditate reiciendis consequuntur fuga? Saepe incidunt nihil aliquam quas.</p>
-                        <h1 class="mt-3">$120</h1>
+                        <h1 class="mt-3 text-danger">$120</h1>
                         <button type="button" class="btn btn-warning w-25 text-white  ">Buy</button>
                     </div>
                     <div class="col-lg-5">
@@ -61,9 +68,11 @@
                  <!-- single item -->
               <div class="carousel-item">
                 <div class="row">
-                 <div class="col-lg-7 d-flex justify-content-center flex-column text-white">
-                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+                 <div class="col-lg-7 d-flex justify-content-center flex-column ">
+                     <h2>Hight Quality TV set</h2>
                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laborum harum illo ducimus? Voluptate, sequi?</p>
+                     <h1 class="mt-3 text-danger">$120</h1>
+                        <button type="button" class="btn btn-warning w-25 text-white  ">Buy</button>
                  </div>
                  <div class="col-lg-5"> <img src="images/banner-images/tv.png" class="d-block w-100" alt="..."></div>
                 </div>
@@ -71,9 +80,11 @@
                <!-- single item -->
                <div class="carousel-item">
                  <div class="row">
-                     <div class="col-lg-7 d-flex flex-column justify-content-center text-white">
-                         <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                     <div class="col-lg-7 d-flex flex-column justify-content-center ">
+                         <h2>Best X-Box </h2>
                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laborum harum illo ducimus? Voluptate, sequi?</p>
+                         <h1 class="mt-3 text-danger">$120</h1>
+                         <button type="button" class="btn btn-warning w-25 text-white  ">Buy</button>
                      </div>
                      <div class="col-lg-5"><img src="images/banner-images/xbox.png" class="d-block w-100 " alt="..."></div>
                  </div>
@@ -90,8 +101,6 @@
               </button>
          </div>
      </section>
-    </header>
-
 
      <!-- Main starts -->
       
@@ -180,7 +189,7 @@
 
 
               <!-- Bags section start here -->
-              <section id="backpacks" class="container mt-5 mb-5">
+              <section id="backpack" class="container mt-5 mb-5">
                 <h1>Bags</h1>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <!-- single section -->
@@ -229,15 +238,15 @@
 
               <!-- Form section start here -->
              
-              <section id="subscribe" class="container mt-5 pt-5 ">
-                <div class="mb-5 p-5 border text-center rounded bg-info text-white">
+              <section id="subscribe" class="container mt-5 ">
+                <div class="mb-5 p-5 border text-center rounded bg-danger-subtle text-danger">
                     <div class="d-flex flex-column justify-content-center">
                         <h3>LET'S STAY IN TOUCH</h3>
                         <p>Get updates on sales!</p>                
                         <div class="d-flex justify-content-center mb-3"><input type="email" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp"> </div>     
                     </div>
                    
-                    <button class=" btn btn-warning">SUBMIT</button>
+                    <button class=" btn btn-warning text-white">SUBMIT</button>
                   </div>
                   
               </section>
